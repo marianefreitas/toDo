@@ -1,3 +1,5 @@
+import AnotherComponent from "./AnotherComponent";
+
 function FirstComponent() {
 
     // comentario
@@ -10,6 +12,7 @@ function FirstComponent() {
             <p>Primeiro Componente!</p>
             {2+2}
             <p>Nome: {name}</p>
+            <AnotherComponent/>
         </div>
     );
 }

@@ -15,6 +15,19 @@ function App() {
     {/* preventDefault serve para quando o formulário for enviado a página não seja recarregada(SPA) */}
     e.preventDefault();
 
+    const todo = {
+      id: Math.random(),
+      title,
+      time,
+      done: false
+    }
+
+    // envio api
+    console.log(todo);
+
+    setTitle("");
+    setTime("");
+
   }
 
   return (
@@ -51,7 +64,7 @@ function App() {
             required
             />
           </div>
-          
+
           <input type='submit' value='Criar Tarefa'/>
 
         </form>
